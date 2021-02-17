@@ -44,11 +44,26 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Container(
-          width: 200.0,
-          height: 200.0,
-          color: Colors.brown,
-          child: Center(child: Text('hello')),
+        child:  SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+             RaisedButton(
+               color: Colors.greenAccent,
+               elevation: 1,
+               onPressed: (){},
+               child: Text('Click Me'),
+              ),
+              FlatButton(
+                color: Colors.blue,
+                onPressed: (){},
+                child: Text('Click Me'),
+              ),
+            ]
+           ),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
