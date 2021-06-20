@@ -1,4 +1,4 @@
-# flutter_application_1
+# flutter application learing day 1
 
 A new Flutter project.
 
